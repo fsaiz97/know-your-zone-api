@@ -23,9 +23,9 @@ api.get("/", (req, res) => {
     })
 })
 
-api.use("/summary", summaryRouter); // summary route
-api.use("/rent", rentRouter); // rent route
-api.use("/crime", crimeRouter); // crime route
+api.use("/summary", summaryRouter);
+api.use("/rent", rentRouter);
+api.use("/crime", crimeRouter);
 api.use("/demographics", demoRouter);
 
 module.exports = api;
